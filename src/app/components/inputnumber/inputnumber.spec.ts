@@ -139,7 +139,6 @@ describe('InputNumber', () => {
         const newValue: string[] = ['22','222','2222','22222','2210','22110','221110','2200', '22000', '220000'];
         const result: boolean[] = [false, false, false, false, true, true, true, true, true, true];
 
-        //TODO bug
         for (let i = 0; i < currentValue.length; i++) {           
             expect(inputNumber.isValueChanged(currentValue[i], newValue[i])).toEqual(result[i]);
         }        
